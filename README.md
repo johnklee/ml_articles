@@ -5,6 +5,11 @@ Collection of articles related to ML
 * **Medium**: 
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Time_Series_Outlier_Detection_with_ThymeBoost/notebook.ipynb'>Time Series Outlier Detection with ThymeBoost</a>
 
+## ML Categories
+
+### Unsupervised
+* <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Unsupervised_Anomaly_Detection_in_Python/notebook.ipynb'><b>Medium</b> - Pycaret: Unsupervised Anomaly Detection</a>
+
 ## ML knowledge and terminology introduction
 * **Others**: 
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/bias_and_variance_tradeoff_machine_learning/notebook.ipynb'>Bias and Variance in Machine Learning – A Fantastic Guide for Beginners!</a>
