@@ -10,6 +10,11 @@ Collection of articles related to ML
 ### Unsupervised
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Unsupervised_Anomaly_Detection_in_Python/notebook.ipynb'><b>Medium</b> - Pycaret: Unsupervised Anomaly Detection</a>
 
+### Supervised
+
+#### Text Related
+* <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Unsupervised_Text_Classification_with_Lbl2Vec/notebook.ipynb'><b>Medium</b> - Unsupervised Text Classification with Lbl2Vec</a>
+
 ## ML knowledge and terminology introduction
 * **Others**: 
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/bias_and_variance_tradeoff_machine_learning/notebook.ipynb'>Bias and Variance in Machine Learning – A Fantastic Guide for Beginners!</a>
