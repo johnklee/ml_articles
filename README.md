@@ -17,6 +17,9 @@ Collection of articles related to ML
 ## ML Data Exploration
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Improving_Your_Data_Visualizations_with_Stacked_Bar_Charts_in_Python/notebook.ipynb'>Medium - Improving Your Data Visualizations with Stacked Bar Charts in Python</a>
 
+## ML Feature Selection
+* <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/kdnuggets/Alternative_Feature_Selection_Methods_in_Machine_Learning/notebook.ipynb'><b>kdnuggets</b> - Alternative Feature Selection Methods in Machine Learning</a>
+
 ## ML Discussion
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/Failure_of_Classification_Accuracy_for_Imbalanced_Class_Distributions/notebook.ipynb'><b>mlmastery</b> - Failure of Classification Accuracy for Imbalanced Class Distributions</a>
 
