@@ -4,6 +4,7 @@ Collection of articles related to ML
 ## ML Utilities, Algorithms
 * **Medium**: 
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Time_Series_Outlier_Detection_with_ThymeBoost/notebook.ipynb'>Time Series Outlier Detection with ThymeBoost</a>
+  * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Speeding_Up_Exploratory_Data_Analysis_with_Python/notebook.ipynb'>Speeding Up Exploratory Data Analysis with Python</a>
 
 ## ML Categories
 
