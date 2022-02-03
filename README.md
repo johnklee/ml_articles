@@ -16,6 +16,9 @@ Collection of articles related to ML
 #### Text Related
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Unsupervised_Text_Classification_with_Lbl2Vec/notebook.ipynb'><b>Medium</b> - Unsupervised Text Classification with Lbl2Vec</a>
 
+#### Graph Related
+* [Building and modelling a graph neural network from scratch with Keras](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/Building_and_modelling_a_graph_neural_network_from_scratch/notebook.ipynb)
+
 ## ML knowledge and terminology introduction
 * **Others**: 
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/bias_and_variance_tradeoff_machine_learning/notebook.ipynb'>Bias and Variance in Machine Learning – A Fantastic Guide for Beginners!</a>
@@ -30,4 +33,5 @@ Collection of articles related to ML
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/Failure_of_Classification_Accuracy_for_Imbalanced_Class_Distributions/notebook.ipynb'><b>mlmastery</b> - Failure of Classification Accuracy for Imbalanced Class Distributions</a>
 
 ## Deep Learning
-*  [Dropout Regularization in Deep Learning Models With Keras](https://nbviewer.jupyter.org/github/johnklee/ml_articles/blob/master/mlmastery/Dropout_Regularization_in_Deep_Learning_Models_With_Keras/notebook.ipynb)
+* [Dropout Regularization in Deep Learning Models With Keras](https://nbviewer.jupyter.org/github/johnklee/ml_articles/blob/master/mlmastery/Dropout_Regularization_in_Deep_Learning_Models_With_Keras/notebook.ipynb)
+* [Building and modelling a graph neural network from scratch with Keras](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/Building_and_modelling_a_graph_neural_network_from_scratch/notebook.ipynb)
