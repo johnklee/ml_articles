@@ -38,3 +38,4 @@ Collection of articles related to ML
 ## Deep Learning
 * [Dropout Regularization in Deep Learning Models With Keras](https://nbviewer.jupyter.org/github/johnklee/ml_articles/blob/master/mlmastery/Dropout_Regularization_in_Deep_Learning_Models_With_Keras/notebook.ipynb)
 * [Building and modelling a graph neural network from scratch with Keras](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/Building_and_modelling_a_graph_neural_network_from_scratch/notebook.ipynb)
+* [Understand the Impact of Learning Rate on Neural Network Performance](https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/Understand_the_Impact_of_Learning_Rate_on_Neural_Network_Performance/notebook.ipynb)
