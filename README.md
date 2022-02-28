@@ -22,6 +22,9 @@ Collection of articles related to ML
 #### Graph Related
 * [Building and modelling a graph neural network from scratch with Keras](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/Building_and_modelling_a_graph_neural_network_from_scratch/notebook.ipynb)
 
+#### Time-series Related
+* [How to use XGBoost for time-series analysis?](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/how-to-use-xgboost-for-time-series-analysis/notebook.ipynb)
+
 ## ML knowledge and terminology introduction
 * **Others**: 
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/bias_and_variance_tradeoff_machine_learning/notebook.ipynb'>Bias and Variance in Machine Learning – A Fantastic Guide for Beginners!</a>
