@@ -6,6 +6,7 @@ Collection of articles related to ML
   * <a target="_blank" href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Time_Series_Outlier_Detection_with_ThymeBoost/notebook.ipynb'>Time Series Outlier Detection with ThymeBoost</a>
   * <a target="_blank" href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Speeding_Up_Exploratory_Data_Analysis_with_Python/notebook.ipynb'>Speeding Up Exploratory Data Analysis with Python</a>
   * <a target="_blank" href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Using_SHAP_Values_to_Explain_How_Your_Machine_Learning_Model_Works/notebook.ipynb'>Using SHAP Values to Explain How Your Machine Learning Model Works</a>
+  * <a target="_blank" href='https://github.com/johnklee/ml_articles/blob/master/medium/Grid_Search_VS_Random_Search_VS_Bayesian_Optimization/notebook.ipynb'>Grid Search VS Random Search VS Bayesian Optimization</a>
 
 ## ML Categories
 
