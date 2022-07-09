@@ -38,6 +38,7 @@ Collection of articles related to ML
 ## ML Feature Selection
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/kdnuggets/Alternative_Feature_Selection_Methods_in_Machine_Learning/notebook.ipynb'><b>kdnuggets</b> - Alternative Feature Selection Methods in Machine Learning</a>
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/a_guide_to_feature_engineering_in_time_series_with_tsfresh/notebook.ipynb'><b>AIM</b> - A guide to feature engineering in time series with Tsfresh</a>
+* <a href='https://github.com/johnklee/ml_articles/blob/master/mlmastery/Grid_search_hyperparameters_deep_learning_models_python_keras/notebook.ipynb'><b>MLMastery</b> - How to Grid Search Hyperparameters for Deep Learning Models in Python With Keras</a>
 
 ## ML Discussion
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/Failure_of_Classification_Accuracy_for_Imbalanced_Class_Distributions/notebook.ipynb'><b>mlmastery</b> - Failure of Classification Accuracy for Imbalanced Class Distributions</a>
