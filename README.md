@@ -1,4 +1,4 @@
-## ml_articles
+## ML articles collection
 Collection of articles related to ML
 
 ## ML Utilities, Algorithms
@@ -29,7 +29,7 @@ Collection of articles related to ML
 * [How to use XGBoost for time-series analysis?](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/how-to-use-xgboost-for-time-series-analysis/notebook.ipynb)
 
 ## ML knowledge and terminology introduction
-* **Others**: 
+* **Others**:
   * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/bias_and_variance_tradeoff_machine_learning/notebook.ipynb'>Bias and Variance in Machine Learning – A Fantastic Guide for Beginners!</a>
 
 ## ML Data Exploration
@@ -48,3 +48,6 @@ Collection of articles related to ML
 * [Building and modelling a graph neural network from scratch with Keras](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/Building_and_modelling_a_graph_neural_network_from_scratch/notebook.ipynb)
 * [Understand the Impact of Learning Rate on Neural Network Performance](https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/Understand_the_Impact_of_Learning_Rate_on_Neural_Network_Performance/notebook.ipynb)
 * [How to Develop a Multichannel CNN Model for Text Classification](https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/How_to_Develop_a_Multichannel_CNN_Model_for_Text_Classification/notebook.ipynb)
+
+### Transformer
+* [Keras doc - Implement a Transformer block as a Keras layer and use it for text classification](https://github.com/johnklee/ml_articles/blob/master/others/keras_doc_text_classification_with_transformer/notebook.ipynb)
