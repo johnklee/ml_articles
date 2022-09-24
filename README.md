@@ -2,11 +2,12 @@
 Collection of articles related to ML
 
 ## ML Utilities, Algorithms
-* **Medium**: 
+* **Medium**:
   * <a target="_blank" href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Time_Series_Outlier_Detection_with_ThymeBoost/notebook.ipynb'>Time Series Outlier Detection with ThymeBoost</a>
   * <a target="_blank" href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Speeding_Up_Exploratory_Data_Analysis_with_Python/notebook.ipynb'>Speeding Up Exploratory Data Analysis with Python</a>
   * <a target="_blank" href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Using_SHAP_Values_to_Explain_How_Your_Machine_Learning_Model_Works/notebook.ipynb'>Using SHAP Values to Explain How Your Machine Learning Model Works</a>
   * <a target="_blank" href='https://github.com/johnklee/ml_articles/blob/master/medium/Grid_Search_VS_Random_Search_VS_Bayesian_Optimization/notebook.ipynb'>Grid Search VS Random Search VS Bayesian Optimization</a>
+  * <a target="_blank" href='https://github.com/johnklee/ml_articles/blob/master/medium/explain_machine_learning_models_partial_dependence/notebook.ipynb'>Explaining Machine Learning Models: Partial Dependence</a>
 * **Others**:
   * <a target="_blank" href='https://github.com/johnklee/ml_articles/blob/master/analytics_vidhya/How_to_create_a_custom_data_transformer_using_sklearn/notebook.ipynb'>How to create a custom data transformer using sklearn?</a>
 
