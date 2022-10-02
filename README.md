@@ -52,3 +52,4 @@ Collection of articles related to ML
 
 ### Transformer
 * [Keras doc - Implement a Transformer block as a Keras layer and use it for text classification](https://github.com/johnklee/ml_articles/blob/master/others/keras_doc_text_classification_with_transformer/notebook.ipynb)
+* [A Gentle Introduction to Positional Encoding In Transformer Models, Part 1](https://nbviewer.ipython.org/github/johnklee/ml_articles/blob/master/mlmastery/A_gentle_introduction_to_positional_encoding_in_transformer_models_part1/notebook.ipynb#sect2)
