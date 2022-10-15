@@ -55,3 +55,4 @@ Collection of articles related to ML
 * [A Gentle Introduction to Positional Encoding In Transformer Models, Part 1](https://nbviewer.ipython.org/github/johnklee/ml_articles/blob/master/mlmastery/A_gentle_introduction_to_positional_encoding_in_transformer_models_part1/notebook.ipynb#sect2)
 * [The Transformer Positional Encoding Layer in Keras, Part 2](https://github.com/johnklee/ml_articles/blob/master/mlmastery/The_transformer_positional_encoding_layer_in_keras_part2/notebook.ipynb)
 * [How to Implement Multi-Head Attention From Scratch in TensorFlow and Keras](https://github.com/johnklee/ml_articles/blob/master/mlmastery/How_to_implement_multi-head_attention_from_scratch_in_tensorflow_and_keras/notebook.ipynb)
+* [Implementing the Transformer Encoder From Scratch in TensorFlow and Keras](https://github.com/johnklee/ml_articles/blob/master/mlmastery/Implementing_the_transformer_encoder_from_scratch_in_tensorflow_and_keras/notebook.ipynb)
