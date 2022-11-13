@@ -2,6 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from typing import Optional
 
 
 class KArmsBandit:
@@ -55,10 +56,14 @@ class EPSBandit:
   '''
 
   def __init__(self, eps: int, iters: int,
-               karms_bandit_machine: KArmsBandit):
+               karms_bandit_machine: KArmsBandit,
+               initial_k_rewards: Optional[np.array]=None):
     # Bandit machine
     self.karms_bandit_machine = karms_bandit_machine
     self.k = self.karms_bandit_machine.k
+
+    # Initialize k rewards
+    self.initial_k_rewards = initial_k_rewards
 
     # Search probability
     self.eps = eps
@@ -69,8 +74,10 @@ class EPSBandit:
     # Step count
     self.n = 0
 
-    # Step count for each arm
-    self.k_n = np.zeros(self.k)
+    if self.initial_k_rewards:
+      assert len(self.initial_k_rewards) == k
+
+    self.reset_k_rewards()
 
     # Total mean reward
     self.mean_reward = 0
@@ -78,9 +85,17 @@ class EPSBandit:
     # Reward obtained from each iteration.
     self.reward = np.zeros(iters)
 
-    # Mean reward for each arm
-    self.k_reward = np.zeros(self.k)
+  def reset_k_rewards(self):
+    """Resets rewards of K-arms bandit."""
+    if self.initial_k_rewards:
+      self.k_reward = self.initial_k_rewards
+      self.k_n = np.ones(self.k)
+    else:
+      # Step count for each arm
+      self.k_n = np.zeros(self.k)
 
+      # Mean reward for each arm
+      self.k_reward = np.zeros(self.k)
 
   def pull(self):
     # Generate random number
@@ -116,10 +131,9 @@ class EPSBandit:
   def reset(self):
     # Resets results while keeping settings
     self.n = 0
-    self.k_n = np.zeros(self.k)
     self.mean_reward = 0
     self.reward = np.zeros(self.iters)
-    self.k_reward = np.zeros(self.k)
+    self.reset_k_rewards()
 
 
 class EPSDecayBandit:
