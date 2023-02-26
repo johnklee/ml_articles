@@ -33,6 +33,7 @@ Collection of articles related to ML
 
 #### Time-series Related
 * [How to use XGBoost for time-series analysis?](https://nbviewer.org/github/johnklee/ml_articles/blob/master/others/how-to-use-xgboost-for-time-series-analysis/notebook.ipynb)
+* [Using CNN for financial time series prediction](https://nbviewer.org/github/johnklee/ml_articles/blob/master/mlmastery/Using_cnn_for_financial_time_series_prediction/notebook.ipynb)
 
 ## ML knowledge and terminology introduction
 * **Others**:
