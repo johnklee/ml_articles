@@ -23,6 +23,7 @@ Collection of articles related to ML
 #### Reinforcement Learning
 * <a href='https://github.com/johnklee/ml_articles/blob/master/medium/multi_armed_bandits_and_reinforcement_learning/notebook.ipynb'>A Gentle Introduction to the Classic RL Problem with Python
   Examples</a>
+* <a href='https://github.com/johnklee/ml_articles/blob/master/medium/Thompson_sampling/notebook.ipynb'>Multi-armed bandits - Thompson sampling</a>
 
 #### Text Related
 * <a href='https://nbviewer.org/github/johnklee/ml_articles/blob/master/medium/Unsupervised_Text_Classification_with_Lbl2Vec/notebook.ipynb'><b>Medium</b> - Unsupervised Text Classification with Lbl2Vec</a>
