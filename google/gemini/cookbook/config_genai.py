@@ -17,4 +17,7 @@ def get_model(model_name: str = 'gemini-1.5-flash'):
   Returns:
     The Genai model object.
   """
-  return genai.GenerativeModel(f'models/{model_name}')
+  if not model_name.startswith('models/'):
+    model_name = f'models/{model_name}'
+
+  return genai.GenerativeModel(model_name)
