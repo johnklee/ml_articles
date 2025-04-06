@@ -14,7 +14,7 @@ model = ChatOpenAI(model="gpt-4o")
 server_params = StdioServerParameters(
     command="python",
     # Make sure to update to the full absolute path to your math_server.py file
-    args=["/home/john/Gitrepos/ml_articles/medium/Clear_intro_to_mcp/math_mcp_server.py"])
+    args=["/tmp/math_mcp_server.py"])
 
 
 async def main():
