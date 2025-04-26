@@ -1,8 +1,10 @@
 from typing import TypedDict
+from chains.binary_questions import BINARY_QUESTION_CHAIN
 from chains.escalation_check import ESCALATION_CHECK_CHAIN
 from chains.notice_extraction import NOTICE_PARSER_CHAIN, NoticeEmailExtract
 from langgraph.graph import END, START, StateGraph
 from pydantic import EmailStr
+from utils.graph_utils import create_legal_ticket, send_escalation_email
 from utils.logging_config import LOGGER
 
 
@@ -16,7 +18,19 @@ class GraphState(TypedDict):
     follow_ups: dict[str, bool] | None
     current_follow_up: str | None
 
-workflow = StateGraph(GraphState)
+
+def answer_follow_up_question_node(state: GraphState) -> GraphState:
+    """Answer follow-up questions about the notice using
+    BINARY_QUESTION_CHAIN"""
+    if state["current_follow_up"]:
+        question = state["current_follow_up"] + " " + state["notice_message"]
+        answer = BINARY_QUESTION_CHAIN.invoke({"question": question})
+        if state.get("follow_ups"):
+            state["follow_ups"][state["current_follow_up"]] = answer
+        else:
+            state["follow_ups"] = {state["current_follow_up"]: answer}
+
+    return state
 
 
 def parse_notice_message_node(state: GraphState) -> GraphState:
@@ -50,6 +64,45 @@ def check_escalation_status_node(state: GraphState) -> GraphState:
     return state
 
 
+def send_escalation_email_node(state: GraphState) -> GraphState:
+    """Send an escalation email"""
+    send_escalation_email(
+        notice_email_extract=state["notice_email_extract"],
+        escalation_emails=state["escalation_emails"],
+    )
+    return state
+
+
+def create_legal_ticket_node(state: GraphState) -> GraphState:
+    """Node to create a legal ticket"""
+    follow_up = create_legal_ticket(
+        current_follow_ups=state.get("follow_ups"),
+        notice_email_extract=state["notice_email_extract"],
+    )
+    state["current_follow_up"] = follow_up
+    return state
+
+
+def route_escalation_status_edge(state: GraphState) -> str:
+    """Determine whether to send an escalation email or
+    create a legal ticket"""
+    if state["requires_escalation"]:
+        LOGGER.info("Escalation needed!")
+        return "send_escalation_email"
+
+    LOGGER.info("No escalation needed")
+    return "create_legal_ticket"
+
+
+def route_follow_up_edge(state: GraphState) -> str:
+    """Determine whether a follow-up question is required"""
+    if state.get("current_follow_up"):
+        return "answer_follow_up_question"
+    return END
+
+
+# Part 1
+workflow = StateGraph(GraphState)
 
 # Adds nodes
 workflow.add_node("parse_notice_message", parse_notice_message_node)
@@ -61,3 +114,59 @@ workflow.add_edge("parse_notice_message", "check_escalation_status")
 workflow.add_edge("check_escalation_status", END)
 
 NOTICE_EXTRACTION_GRAPH = workflow.compile()
+
+
+# Part 2: Conditional edge
+workflow2 = StateGraph(GraphState)
+workflow2.add_node("parse_notice_message", parse_notice_message_node)
+workflow2.add_node("check_escalation_status", check_escalation_status_node)
+workflow2.add_node("send_escalation_email", send_escalation_email_node)
+workflow2.add_node("create_legal_ticket", create_legal_ticket_node)
+
+workflow2.add_edge(START, "parse_notice_message")
+workflow2.add_edge("parse_notice_message", "check_escalation_status")
+workflow2.add_conditional_edges(
+    "check_escalation_status",
+    route_escalation_status_edge,
+    {
+        "send_escalation_email": "send_escalation_email",
+        "create_legal_ticket": "create_legal_ticket",
+    },
+)
+workflow2.add_edge("send_escalation_email", "create_legal_ticket")
+workflow2.add_edge("create_legal_ticket", END)
+
+
+NOTICE_EXTRACTION_GRAPH2 = workflow2.compile()
+
+# Part3: Conditional and cyclic edge
+workflow3 = StateGraph(GraphState)
+workflow3.add_node("parse_notice_message", parse_notice_message_node)
+workflow3.add_node("check_escalation_status", check_escalation_status_node)
+workflow3.add_node("send_escalation_email", send_escalation_email_node)
+workflow3.add_node("create_legal_ticket", create_legal_ticket_node)
+workflow3.add_node("answer_follow_up_question", answer_follow_up_question_node)
+
+workflow3.add_edge(START, "parse_notice_message")
+workflow3.add_edge("parse_notice_message", "check_escalation_status")
+workflow3.add_conditional_edges(
+    "check_escalation_status",
+    route_escalation_status_edge,
+    {
+        "send_escalation_email": "send_escalation_email",
+        "create_legal_ticket": "create_legal_ticket",
+    },
+)
+workflow3.add_conditional_edges(
+    "create_legal_ticket",
+    route_follow_up_edge,
+    {
+        "answer_follow_up_question": "answer_follow_up_question",
+        END: END,
+    },
+)
+
+workflow3.add_edge("send_escalation_email", "create_legal_ticket")
+workflow3.add_edge("answer_follow_up_question", "create_legal_ticket")
+
+NOTICE_EXTRACTION_GRAPH3 = workflow3.compile()
