@@ -1,0 +1,4 @@
+[support_lee] 2023-10-05T16:01:09+00:00 : Hi there! Need help with something?
+[mrfixit99] 2023-10-05T16:01:44+00:00 : My order hasn’t arrived and it’s been 3 f***ing weeks.
+[support_lee] 2023-10-05T16:02:30+00:00 : I’m really sorry about that. Let me check… Okay, it looks like it was lost in transit. I’ll send a replacement with express shipping right now.
+[mrfixit99] 2023-10-05T16:03:17+00:00 : Damn, I was ready to explode—but that actually helps. Thanks for fixing it fast.

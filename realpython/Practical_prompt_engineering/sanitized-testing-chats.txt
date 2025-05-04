@@ -1,0 +1,15 @@
+[Agent] 2023-08-12 : Hello! How can I assist you today?
+[Customer] 2023-08-12 : I can't download the monthly report!
+[Agent] 2023-08-12 : Can you try clearing your browser cache and refreshing the page?
+[Customer] 2023-08-12 : That did the trick. Thanks!
+[Agent] 2023-08-12 : It is my pleasure to help.
+
+[Agent] 2023-07-24 : What can I help you with?
+[Customer] 2023-07-24 : I CAN'T CONNECT TO MY 😤 ACCOUNT
+[Agent] 2023-07-24 : Are you sure it's not your caps lock?
+[Customer] 2023-07-24 : 😤! You're right!
+
+[Agent] 2023-10-05 : Hi there! Need help with something?
+[Customer] 2023-10-05 : My order hasn’t arrived and it’s been 3 😤 weeks.
+[Agent] 2023-10-05 : I’m really sorry about that. Let me check… Okay, it looks like it was lost in transit. I’ll send a replacement with express shipping right now.
+[Customer] 2023-10-05 : Damn, I was ready to explode—but that actually helps. Thanks for fixing it fast.

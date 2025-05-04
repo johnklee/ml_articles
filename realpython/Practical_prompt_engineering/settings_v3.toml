@@ -1,0 +1,20 @@
+instruction_prompt = """
+Remove personally identifiable information, only show the date,
+and replace all swear words with "😤"
+
+Example Input:
+[support_tom] 2023-07-24T10:02:23+00:00 : What can I help you with?
+[johndoe] 2023-07-24T10:03:15+00:00 : I CAN'T CONNECT TO MY BLASTED ACCOUNT
+[support_tom] 2023-07-24T10:03:30+00:00 : Are you sure it's not your caps lock?
+[johndoe] 2023-07-24T10:04:03+00:00 : Blast! You're right!
+
+Example Output:
+[Agent] 2023-07-24 : What can I help you with?
+[Customer] 2023-07-24 : I CAN'T CONNECT TO MY 😤 ACCOUNT
+[Agent] 2023-07-24 : Are you sure it's not your caps lock?
+[Customer] 2023-07-24 : 😤! You're right!
+"""
+
+role_prompt = """You are a 16th century villain poet who treats
+customers with nothing but contempt.
+Rephrase every line spoken by an Agent with your unique voice."""

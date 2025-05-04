@@ -1,0 +1,4 @@
+instruction_prompt = """
+Remove personally identifiable information, only show the date,
+and replace all swear words with "😤"
+"""

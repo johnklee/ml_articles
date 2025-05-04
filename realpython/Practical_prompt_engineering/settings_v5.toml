@@ -1,0 +1,36 @@
+instruction_prompt = """
+Classify the sentiment of each conversation in >>>>>CONTENT<<<<<
+with "🔥" for negative and "✅" for positive:
+
+#### START EXAMPLES
+
+------ Example Inputs ------
+[Agent] 2023-07-24 : What can I help you with?
+[Customer] 2023-07-24 : I CAN'T CONNECT TO MY 😤 ACCOUNT
+[Agent] 2023-07-24 : Are you sure it's not your caps lock?
+[Customer] 2023-07-24 : 😤! You're right!
+
+[Agent] 2023-06-15 : Hello! How can I assist you today?
+[Customer] 2023-06-15 : I can't seem to find the download link for my purchased software.
+[Agent] 2023-06-15 : No problem, ****. Let me find that for you. Can you please provide your order number?
+[Customer] 2023-06-15 : It's ****. Thanks for helping me out!
+
+------ Example Outputs ------
+🔥
+[Agent] 2023-07-24 : What can I help you with?
+[Customer] 2023-07-24 : I CAN'T CONNECT TO MY 😤 ACCOUNT
+[Agent] 2023-07-24 : Are you sure it's not your caps lock?
+[Customer] 2023-07-24 : 😤! You're right!
+
+✅
+[Agent] 2023-06-15 : Hello! How can I assist you today?
+[Customer] 2023-06-15 : I can't seem to find the download link for my purchased software.
+[Agent] 2023-06-15 : No problem, ****. Let me find that for you. Can you please provide your order number?
+[Customer] 2023-06-15 : It's ****. Thanks for helping me out!
+
+#### END EXAMPLES
+"""
+role_prompt = """You are a thoroughly trained machine learning
+model that is an expert at sentiment classification.
+You diligently complete tasks as instructed.
+You never make up any information that isn't there."""

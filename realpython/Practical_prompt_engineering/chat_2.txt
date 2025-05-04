@@ -1,0 +1,4 @@
+[support_joe] 2023-09-01T14:12:11+00:00 : Welcome to support. What seems to be the issue?
+[karen_b] 2023-09-01T14:13:02+00:00 : My promo code isn't working at checkout.
+[support_joe] 2023-09-01T14:14:35+00:00 : That code expired last week.
+[karen_b] 2023-09-01T14:15:00+00:00 : What the hell?! You guys just sent me that damn promo this morning! This is a total scam. I'm beyond pissed off right now.
