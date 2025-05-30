@@ -1,0 +1,25 @@
+[project]
+name = "20250530-build-ai-agents-with-python"
+version = "0.1.0"
+description = "For course of datascool `Build AI agents with Python`"
+authors = [
+    {name = "jkclee",email = "puremonkey2001@yahoo.com.tw"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "langchain (>=0.3.25,<0.4.0)",
+    "langchain-community (>=0.3.24,<0.4.0)",
+    "langchain-text-splitters (>=0.3.8,<0.4.0)",
+    "langgraph (>=0.4.7,<0.5.0)",
+    "langchain-google-genai (>=2.1.5,<3.0.0)",
+    "tavily-python (>=0.7.3,<0.8.0)",
+    "langchain-openai (>=0.3.18,<0.4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
