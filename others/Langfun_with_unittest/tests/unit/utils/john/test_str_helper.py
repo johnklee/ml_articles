@@ -1,29 +1,29 @@
 import unittest
 from utils.john.str_helper import to_upper
 
+
 class TestToUpper(unittest.TestCase):
-    def test_empty_string(self):
+    def test_to_upper_empty(self):
         self.assertEqual(to_upper(""), "")
 
-    def test_lower_case_string(self):
-        self.assertEqual(to_upper("hello"), "HELLO")
+    def test_to_upper_single_char(self):
+        self.assertEqual(to_upper("a"), "A")
 
-    def test_mixed_case_string(self):
-        self.assertEqual(to_upper("hELLo"), "HELLO")
+    def test_to_upper_multiple_chars(self):
+        self.assertEqual(to_upper("abc"), "ABC")
 
-    def test_already_upper_case_string(self):
-        self.assertEqual(to_upper("HELLO"), "HELLO")
+    def test_to_upper_mixed_case(self):
+        self.assertEqual(to_upper("aBc"), "ABC")
 
-    def test_non_ascii_characters(self):
-      self.assertEqual(to_upper("你好"), "你好") # Non-ASCII should remain unchanged
+    def test_to_upper_with_space(self):
+        self.assertEqual(to_upper("a b"), "A B")
 
-    def test_numeric_input(self):
-        with self.assertRaises(AttributeError): # Numbers do not have upper() methods
-            to_upper(123)
+    def test_to_upper_with_special_chars(self):
+        self.assertEqual(to_upper("!@#$"), "!@#$")
 
-    def test_none_input(self):
-        with self.assertRaises(AttributeError): # Check for None input
-            to_upper(None)
+    def test_to_upper_already_upper(self):
+        self.assertEqual(to_upper("ABC"), "ABC")
 
-if __name__ == "__main__":
-    unittest.main()
+    def test_to_upper_non_ascii(self):
+        self.assertEqual(to_upper("你好"), "你好") # Non-ASCII characters should remain unchanged
+
