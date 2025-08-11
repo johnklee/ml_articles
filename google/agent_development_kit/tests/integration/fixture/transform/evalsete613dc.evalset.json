@@ -1,0 +1,71 @@
+{
+  "eval_set_id": "evalsete613dc",
+  "name": "evalsete613dc",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "casedc24df",
+      "conversation": [
+        {
+          "invocation_id": "e-3a8db824-1014-4eed-bf54-5a1b9ff6525f",
+          "user_content": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "1N = ?M"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "video_metadata": null,
+                "thought": null,
+                "inline_data": null,
+                "file_data": null,
+                "thought_signature": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "function_call": null,
+                "function_response": null,
+                "text": "1 N = 13 M because 1 N = 13 M.\nSo, 1 N = 13 M"
+              }
+            ],
+            "role": null
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "id": "adk-23a4f177-0555-4237-a0f7-2448939fdfb4",
+                "args": {
+                  "current_value": 1,
+                  "target_unit": "M",
+                  "current_unit": "N"
+                },
+                "name": "transform"
+              }
+            ],
+            "intermediate_responses": []
+          },
+          "creation_timestamp": 1754890586.186793
+        }
+      ],
+      "session_input": {
+        "app_name": "evaluate_transform",
+        "user_id": "user",
+        "state": {}
+      },
+      "creation_timestamp": 1754890602.2702205
+    }
+  ],
+  "creation_timestamp": 1754890596.4627662
+}
