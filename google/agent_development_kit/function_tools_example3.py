@@ -50,9 +50,10 @@ async def call_agent_async(query):
       user_id=USER_ID, session_id=SESSION_ID, new_message=content)
 
   async for event in events:
-    if event.is_final_response():
-      final_response = event.content.parts[0].text
-      print("Agent Response: ", final_response)
+    #if event.is_final_response():
+    #  final_response = event.content.parts[0].text
+    #  print("Agent Response: ", final_response)
+    print(f"Event received: {event}")
 
 
 if __name__ == '__main__':
