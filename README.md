@@ -63,3 +63,7 @@ Collection of articles related to ML
 * [How to Implement Multi-Head Attention From Scratch in TensorFlow and Keras](https://github.com/johnklee/ml_articles/blob/master/mlmastery/How_to_implement_multi-head_attention_from_scratch_in_tensorflow_and_keras/notebook.ipynb)
 * [Implementing the Transformer Encoder From Scratch in TensorFlow and Keras](https://github.com/johnklee/ml_articles/blob/master/mlmastery/Implementing_the_transformer_encoder_from_scratch_in_tensorflow_and_keras/notebook.ipynb)
 * [Implementing the Transformer Decoder From Scratch in TensorFlow and Keras](https://github.com/johnklee/ml_articles/blob/master/mlmastery/Implementing_the_transformer_decoder_from_scratch_in_tensorflow_and_keras/notebook.ipynb)
+
+## Learning materials
+* **DeepLearning.ai**
+  - [Building Live Voice Agents with Google’s ADK](https://learn.deeplearning.ai/courses/building-live-voice-agents-with-googles-adk/lesson/dewdno61/introduction)
